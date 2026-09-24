@@ -207,3 +207,26 @@ body{font-size:17px}
   .gallery-main,.gallery-side{grid-column:auto}
   .gallery-main img,.gallery-side img{height:auto;min-height:0}
 }
+
+
+/* Awards user-photo overrides */
+.gallery-side.medal-side img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+.gallery-side.sports-side{
+  background:#000;
+  display:grid;
+  place-items:center;
+}
+.gallery-side.sports-side img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  background:#000;
+}
+@media(max-width:520px){
+  .gallery-side.sports-side img{height:auto;object-fit:contain}
+}
