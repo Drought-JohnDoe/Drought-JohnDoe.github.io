@@ -230,3 +230,23 @@ body{font-size:17px}
 @media(max-width:520px){
   .gallery-side.sports-side img{height:auto;object-fit:contain}
 }
+
+
+/* Awards gallery simplified to one reliable main image */
+.award-gallery{
+  display:block !important;
+}
+.award-gallery .gallery-main{
+  width:100%;
+  margin:0;
+  border-radius:24px;
+  overflow:hidden;
+}
+.award-gallery .gallery-main img{
+  width:100%;
+  height:auto;
+  min-height:0 !important;
+  max-height:none;
+  object-fit:cover;
+  object-position:center;
+}
